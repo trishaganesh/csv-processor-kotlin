@@ -4,7 +4,7 @@ import java.io.File
 
 
 //This file reads a CSV file, treats the first row as column headers, and converts each subsequent line into a row_abstraction object mapping headers to their corresponding values
-class CsvReader(private val file: File) {
+class file_reader(private val file: File) {
 
     //this reads the CSV file and returns all rows as a list of row_abstraction
     fun read(): List<row_abstraction> {
