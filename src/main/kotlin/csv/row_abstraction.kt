@@ -1,14 +1,13 @@
-package csv
+package csv.core
 
 //this file defines a row abstraction for a CSV processor
 /*This represents a single row in a CSV file
 each column name maps to its corresponding cell value */
-data class row_abstraction(
+data class row_abstraction (
     /* an internal storage for the row:
     key  -> column header (e.g., "name", "age")
     value -> cell value as a String */
-    private val data: Map<String, String>
-) {
+    private val data: Map<String, String>) {
 
     /*this allows access to column values:
      for i.e. row["age"] */
