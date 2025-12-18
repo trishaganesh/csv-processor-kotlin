@@ -6,7 +6,7 @@ import java.io.File
 class writer(private val file: File) {
 
     //this line writes all rows to the file
-    fun write(rows: List<CsvRow>) {
+    fun write(rows: List<row_abstraction>) {
 
         //and if there are no rows, do nothing
         if (rows.isEmpty()) return
