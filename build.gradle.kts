@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.10"
+    kotlin("jvm") version "1.9.22"
     application
 }
 
@@ -8,9 +8,10 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.doyaaaaaken:kotlin-csv-jvm:1.9.0")
+    testImplementation(kotlin("test"))
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("csv.cli.MainKt")
 }
+
