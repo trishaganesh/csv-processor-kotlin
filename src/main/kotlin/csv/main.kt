@@ -1,5 +1,7 @@
 package csv.cli
 
+import csv.core.*
+import csv.dsl.*
 import java.io.File
 
 fun main() {
