@@ -1,4 +1,4 @@
-package csv
+package csv.cli
 
 import java.io.File
 
