@@ -1,4 +1,4 @@
-package csv
+package csv.core
 
 import java.io.File
 
