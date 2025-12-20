@@ -6,7 +6,6 @@ import csv.core.row_abstraction
 class Query(private val rows: Sequence<row_abstraction>) {
 
     /* we have filter rows based on a condition (like a WHERE clause) */
-   { it["age"].toInt() >= 18 }
     fun where(condition: (row_abstraction) -> Boolean) =
         Query(rows.filter(condition))
 
@@ -20,7 +19,6 @@ class Query(private val rows: Sequence<row_abstraction>) {
 
     /* this adds a computed column to each row
     i.e. add("status") */ 
-  { if (it["age"].toInt() >= 18) "adult" else "minor" }
     fun add(column: String, compute: (row_abstraction) -> String) =
         Query(rows.map { row ->
             //this copies existing columns and add the new computed column
