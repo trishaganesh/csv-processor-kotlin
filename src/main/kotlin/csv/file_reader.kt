@@ -33,7 +33,7 @@ class file_reader(private val file: File) {
             /*we pair each header with its corresponding value
             i.e. ("age" to "21")
            then convert the pairs into a Map<String, String> */
-            row_abstraction(col_headers.zip(cell_values).toMap())
+            yield(row_abstraction(col_headers.zip(cell_values).toMap()))
         }
     }
 }
